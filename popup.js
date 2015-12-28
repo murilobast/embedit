@@ -11,8 +11,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 	} else if (lol.test(tab.url)) {
 		chrome.tabs.executeScript(tab.id, {
 			file: "lolUrl.js"
-			}
-		);
+		});
 
 	} else {
 		alert("ERROR: Website not supported or there's no video in this page.");
